@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Partituras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leitor de Partituras</h1>
+        <input type="file" id="pdfInput" accept="application/pdf" />
+        <div id="instrumentSelection">
+            <label for="instrument">Escolha o instrumento:</label>
+            <select id="instrument">
+                <option value="piano">Piano</option>
+                <option value="guitar">Guitarra</option>
+                <option value="violin">Violino</option>
+            </select>
+        </div>
+        <button id="playButton">Reproduzir</button>
+        <div id="sheetMusicDisplay"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
